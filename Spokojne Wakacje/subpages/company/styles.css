@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* ================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ================================================= */
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    border: none;
+    outline: none;
+
+}
+
+/* ================================================= */
+
+/*NAVBAR*/
+
+.top-nav-bar {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 5px 14px -7px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 5px 14px -7px rgba(66, 68, 90, 1);
+    box-shadow: 0px 5px 14px -7px rgba(66, 68, 90, 1);
+}
+
+.top-nav-bar-content {
+    width: 50%;
+    height: fit-content;
+
+    min-width: 300px;
+
+    padding: 10px 0px 10px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #4287f5;
+    border-radius: 12px;
+}
+
+.logotype {
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotype img {
+    width: 50%;
+    height: auto;
+
+    min-height: 35px;
+    min-width: 155px;
+
+    max-width: 245px;
+}
+
+.navigation-buttons {
+    display: flex;
+
+    transition: height 400ms ease-in-out;
+}
+
+.navigation-buttons a {
+    margin: 0px 7.5px 0px 0px;
+
+    text-decoration: none;
+
+    font-family: 'Nunito', sans-serif;
+
+    color: white;
+
+    transition-duration: 200ms;
+}
+
+.navigation-buttons a:hover {
+    transform: translateY(-5px);
+}
+
+.navigation-buttons hr {
+    margin: 0px 7.5px 0px 0px;
+
+    border-color: white;
+    border-style: solid;
+}
+
+.mobile-devices-nav-bar {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .top-nav-bar-content,
+    .navigation-buttons {
+        flex-direction: column;
+    }
+
+    .navigation-buttons {
+        width: 100%;
+        height: 0px;
+
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    .navigation-buttons a {
+        margin: 0px 0px 7.5px 0px;
+    }
+
+    .navigation-buttons a:hover {
+        transform: translateX(5px);
+    }
+
+    .navigation-buttons hr {
+        width: 95%;
+
+        margin: 0px 0px 7.5px 0px;
+    }
+
+    .mobile-devices-nav-bar {
+        display: block;
+
+        margin-right: 10px;
+
+        color: white;
+    }
+}
+
+/* ================================================= */
+
+/* BANER */
+
+.baner {
+    width: 100%;
+
+    height: 25%;
+
+    margin-bottom: 50px;
+
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 16px 0px rgba(66, 68, 90, 1);
+}
+
+.baner img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .baner {
+        display: none;
+    }
+}
+
+/* ================================================= */
+
+/* COMPANYHISTORYBOX */
+
+.company-history-box {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Montserrat";
+
+    margin: 0 0 40px 0;
+}
+
+.company-history {
+    width: 60%;
+}
+
+.company-history h4 {
+    margin: 0 0 10px 0;
+
+    width: fit-content;
+}
+
+.company-history h2 {
+    text-align: center;
+
+    margin: 0 0 40px 0;
+}
+
+.company-history div {
+    width: 100%;
+
+    text-align: center;
+
+    margin: 0 0 30px 0;
+}
+
+.company-history h4::after {
+    content: " ";
+
+    display: block;
+
+    height: 2px;
+    width: 0px;
+
+    background-color: #4287f5;
+
+    transition-duration: 600ms;
+}
+
+.company-history div:hover h4::after {
+    width: 100%;
+}
+
+/* ================================================= */
+
+/* COLABFORM */
+
+.colab-form-box {
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    font-family: Kanit, sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
+
+.colab-form {
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(188, 188, 188, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: 1px solid rgba(188, 188, 188, 0.3);
+
+    padding: 10px 10px 10px 10px;
+}
+
+.colab-form-header {
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+.colab-form-field {
+    margin-bottom: 15px;
+}
+
+.colab-form-field label {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.colab-form-field input,
+.colab-form-field select,
+.colab-form-field textarea {
+    width: 100%;
+
+    padding: 7px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    transition-duration: 300ms;
+}
+
+.colab-form-field textarea {
+    resize: vertical;
+}
+
+.colab-form-submit {
+    text-align: center;
+}
+
+.colab-form input:hover, textarea:hover, select:hover {
+    border-color: #4287f5;
+}
+
+.colab-form-submit input[type="submit"] {
+    background-color: #4287f5;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.colab-form-submit input[type="submit"]:hover {
+    background-color: #366abe;
+}
+
+/* ================================================= */
+
+/* FOOTER */
+
+.Adolf-Hitler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 10rem 1.5rem 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 1.5rem;
+
+    width: 100%;
+
+    font-family: 'Kanit', sans-serif;
+
+    gap: 60px;
+
+    background-color: #1F2937;
+}
+
+.footer-lists-box {
+    display: flex;
+    width: 550px;
+
+    justify-content: space-between;
+
+    color: #ffffff;
+}
+
+.footer-list-title {
+    margin: 0;
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.footer-list {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    color: #999999;
+}
+
+.footer-list-element {
+    margin-bottom: 0.5rem;
+
+    transition-duration: 500ms;
+
+    cursor: pointer;
+}
+
+.footer-list-element:hover {
+    color: #4287f5
+}
+
+.footer-form-box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 15px;
+
+    color: white;
+
+    transition-duration: 500ms;
+
+    background-color: #2f3741;
+}
+
+.footer-form-box input {
+    height: 30px;
+    width: 200px;
+
+    border: none;
+
+    border-bottom: 2px solid #525d6d;
+
+    color: white;
+
+    transition-duration: 300ms;
+
+    background: transparent;
+
+    padding-left: 5px;
+}
+
+.footer-form-box input::placeholder {
+    color: #525d6d;
+
+    transition-duration: 300ms;
+}
+
+.footer-form-box input:focus-visible {
+    border-bottom: 2px solid #4287f5;
+}
+
+.footer-form-box input:focus-visible::placeholder {
+    color: #4287f5;
+}
+
+.footer-form-box h2 {
+    margin: 0;
+
+    margin-bottom: 10px;
+}
+
+.footer-form-box button {
+    padding: 10px 0px 10px 0px;
+
+    width: 150px;
+
+    cursor: pointer;
+
+    background-color: #4287f5;
+
+    transition-duration: 300ms;
+
+    font-size: 15px;
+
+    color: white;
+}
+
+.footer-form-box button:hover {
+
+    transform: scale(0.95);
+
+    margin-top: -5px;
+
+    background-color: #5491f3;
+}
+
+.footer-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+}
+
+.footer-form-input-box {
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+}
+
+@media screen and (max-width: 1375px) {
+
+    .Adolf-Hitler {
+        flex-direction: column;
+
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer-lists-box {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .footer-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .footer-form-box h2 {
+        text-align: center;
+    }
+
+    .footer-form div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+}

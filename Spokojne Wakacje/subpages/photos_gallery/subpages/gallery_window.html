@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../components/galleryFavicon.png">
+    <title>Galeria zdjęć</title>
+
+    <!--Internal CSS Import-->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!--FontAwesome CSS Import-->
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-2e45578ecf3b28ce6383d10b8c0bf4d0.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+
+</head>
+
+<body>
+
+    <header class="gallery-window-header">
+        <i class="fa-solid fa-expand fa-xl" style="color: grey;" onclick="Fullfill(this)"></i>
+        <a href="../index.html"><i class="fa-solid fa-x fa-xl" style="color: grey"></i></a>
+    </header>
+
+    <section class="main-content" id="sea">
+        <main class="photos-box">
+            <i class="fa-solid fa-arrow-right fa-2xl" style="color: grey;" id="right-arrow" onclick="Slideshow(1)"></i>
+            <i class="fa-solid fa-arrow-left fa-2xl" style="color: grey;" id="left-arrow" onclick="Slideshow(-1)"></i>
+
+            <img src="../components/sea/turkey.png" id="slide">
+            <img src="../components/sea/australia.jpg" id="slide">
+            <img src="../components/sea/brazil.jpg" id="slide">
+            <img src="../components/sea/florida.jpeg" id="slide">
+            <img src="../components/sea/greece.jpg" id="slide">
+            <img src="../components/sea/italy.jpg" id="slide">
+            <img src="../components/sea/sea1.jpg" id="slide">
+
+        </main>
+    
+        <footer class="photos-list">
+            <img src="../components/sea/turkey.png">
+            <img src="../components/sea/australia.jpg">
+            <img src="../components/sea/brazil.jpg">
+            <img src="../components/sea/florida.jpeg">
+            <img src="../components/sea/greece.jpg">
+            <img src="../components/sea/italy.jpg">
+            <img src="../components/sea/sea1.jpg">
+        </footer>
+    </section>
+
+    <section class="main-content" id="exotic">
+        <main class="photos-box">
+            <i class="fa-solid fa-arrow-right fa-2xl" style="color: grey;" id="right-arrow" onclick="Slideshow(1)"></i>
+            <i class="fa-solid fa-arrow-left fa-2xl" style="color: grey;" id="left-arrow" onclick="Slideshow(-1)"></i>
+
+            <img src="../components/exotic/amazonia.jpg" id="slide">
+            <img src="../components/exotic/australia.jpg" id="slide">
+            <img src="../components/exotic/maldives.jpg" id="slide">
+            <img src="../components/exotic/spain.jpg" id="slide">
+            <img src="../components/exotic/thailand.jpg" id="slide">
+        </main>
+    
+        <footer class="photos-list">
+            <img src="../components/exotic/amazonia.jpg">
+            <img src="../components/exotic/australia.jpg">
+            <img src="../components/exotic/maldives.jpg">
+            <img src="../components/exotic/spain.jpg">
+            <img src="../components/exotic/thailand.jpg">
+        </footer>
+    </section>
+
+    <section class="main-content" id="mountains">
+        <main class="photos-box">
+            <i class="fa-solid fa-arrow-right fa-2xl" style="color: grey;" id="right-arrow" onclick="Slideshow(1)"></i>
+            <i class="fa-solid fa-arrow-left fa-2xl" style="color: grey;" id="left-arrow" onclick="Slideshow(-1)"></i>
+
+            <img src="../components/mountains/fuji.jpg" id="slide">
+            <img src="../components/mountains/himalayas.jpeg" id="slide">
+            <img src="../components/mountains/newZealand.jpg" id="slide">
+            <img src="../components/mountains/peak.png" id="slide">
+            <img src="../components/mountains/rysy.jpg" id="slide">
+        </main>
+    
+        <footer class="photos-list">
+            <img src="../components/mountains/fuji.jpg">
+            <img src="../components/mountains/himalayas.jpeg">
+            <img src="../components/mountains/newZealand.jpg">
+            <img src="../components/mountains/peak.png">
+            <img src="../components/mountains/rysy.jpg">
+        </footer>
+    </section>
+
+</body>
+
+</html>
+
+<!--Internal Scripts Import-->
+<script src="./script.js"></script>
